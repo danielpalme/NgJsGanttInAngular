@@ -1,24 +1,19 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { UpgradeModule } from "@angular/upgrade/static";
-
-import { Router } from "@angular/router";
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
-
-import { initAngularjs } from './app/dashboard/ng1/angularjs';
 
 if (environment.production) {
   enableProdMode();
 }
 
-// platformBrowserDynamic().bootstrapModule(AppModule);
+platformBrowserDynamic().bootstrapModule(AppModule).then(ref => {
+  // Ensure Angular destroys itself on hot reloads.
+  if (window['ngRef']) {
+    window['ngRef'].destroy();
+  }
+  window['ngRef'] = ref;
 
-// bootstrap Angular 1 application
-initAngularjs();
-
-platformBrowserDynamic().bootstrapModule(AppModule).then(platformRef => {
-  const upgrade = platformRef.injector.get(UpgradeModule) as UpgradeModule;
-  upgrade.bootstrap(document.documentElement, ['ganttModule']);
-});
+  // Otherise, log the boot error
+}).catch(err => console.error(err));
