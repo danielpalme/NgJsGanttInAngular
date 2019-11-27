@@ -1,38 +1,39 @@
 {
   "name": "ng-js-gantt-in-angular",
   "version": "0.0.0",
-  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^8.0.0",
-    "@angular/common": "^8.0.0",
-    "@angular/compiler": "^8.0.0",
-    "@angular/core": "^8.0.0",
-    "@angular/forms": "^8.0.0",
-    "@angular/platform-browser": "^8.0.0",
-    "@angular/platform-browser-dynamic": "^8.0.0",
-    "@angular/router": "^8.0.0",
-    "@angular/upgrade": "^8.0.0",
-    "core-js": "^2.5.7",
-    "rxjs": "^6.5.2",
-    "tslib": "^1.9.0",
+    "@angular/animations": "~8.2.14",
+    "@angular/common": "~8.2.14",
+    "@angular/compiler": "~8.2.14",
+    "@angular/core": "~8.2.14",
+    "@angular/forms": "~8.2.14",
+    "@angular/platform-browser": "~8.2.14",
+    "@angular/platform-browser-dynamic": "~8.2.14",
+    "@angular/router": "~8.2.14",
+    "@angular/upgrade": "^8.2.14",
+    "rxjs": "~6.4.0",
+    "tslib": "^1.10.0",
     "zone.js": "~0.9.1",
-    "angular": "^1.7.4",
+    "angular": "^1.7.9",
     "angular-gantt": "^2.0.0-rc.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.801.1",
-    "@angular/cli": "^8.0.2",
-    "@angular/compiler-cli": "^8.1.1",
-    "@angular/language-service": "^8.0.0",
-    "codelyzer": "^5.0.1",
-    "typescript": "3.4.5"
+    "@angular-devkit/build-angular": "~0.803.19",
+    "@angular/cli": "~8.3.19",
+    "@angular/compiler-cli": "~8.2.14",
+    "@angular/language-service": "~8.2.14",
+    "@types/node": "~8.9.4",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.15.0",
+    "typescript": "~3.5.3"
   }
 }

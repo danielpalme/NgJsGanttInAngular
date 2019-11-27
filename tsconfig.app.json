@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": [],
+    "paths": {
+      "ResizeSensor": [
+        "node_modules/css-element-queries/src/ResizeSensor.js"
+      ],
+      "ElementQueries": [
+        "node_modules/css-element-queries/src/ElementQueries.js"
+      ],
+      "ui.tree": [
+        "node_modules/angular-ui-tree/dist/angular-ui-tree.js"
+      ]
+    }
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/test.ts",
+    "src/**/*.spec.ts"
+  ]
+}
