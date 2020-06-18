@@ -23,7 +23,7 @@
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2",
-    "angular": "^1.7.9",
+    "angular": "^1.8.0",
     "angular-gantt": "^2.0.0-rc.1"
   },
   "devDependencies": {
