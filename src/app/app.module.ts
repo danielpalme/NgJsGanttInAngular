@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { setAngularJSGlobal, UpgradeModule } from '@angular/upgrade/static';
 import * as angular from 'angular';
 import { AppComponent } from './app.component';
-import { Ng1GanttwrapperDirective } from './dashboard/ng1/ng1.ganttwrapper.directive';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { Ng1GanttwrapperDirective } from './dashboard/ng1/ng1.ganttwrapper.directive';
 
 @NgModule({
   imports: [
