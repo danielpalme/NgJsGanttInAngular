@@ -56,7 +56,7 @@
             "scripts": [],
             "allowedCommonJsDependencies": [
               "angular"
-           ]
+            ]
           },
           "configurations": {
             "production": {
