@@ -7,18 +7,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Ng1GanttwrapperDirective } from './dashboard/ng1/ng1.ganttwrapper.directive';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    UpgradeModule
-  ],
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    Ng1GanttwrapperDirective
-  ],
-  entryComponents: [
-     AppComponent
-  ],
+    imports: [
+        BrowserModule,
+        UpgradeModule
+    ],
+    declarations: [
+        AppComponent,
+        DashboardComponent,
+        Ng1GanttwrapperDirective
+    ]
 })
 export class AppModule {
   constructor(private upgrade: UpgradeModule) {}
