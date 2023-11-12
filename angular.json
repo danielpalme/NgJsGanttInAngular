@@ -95,10 +95,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-js-gantt-in-angular:build:production"
+              "buildTarget": "ng-js-gantt-in-angular:build:production"
             },
             "development": {
-              "browserTarget": "ng-js-gantt-in-angular:build:development"
+              "buildTarget": "ng-js-gantt-in-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,7 +106,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-js-gantt-in-angular:build"
+            "buildTarget": "ng-js-gantt-in-angular:build"
           }
         }
       }
