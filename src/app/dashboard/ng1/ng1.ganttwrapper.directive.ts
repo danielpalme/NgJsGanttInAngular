@@ -66,7 +66,10 @@ angular.
   component('ganttcomp', ng1Component).
   directive('appRoot', downgradeComponent({component: AppComponent}));
 
-@Directive({selector: 'ng1Ganttwrapper'})
+@Directive({
+    selector: 'ng1Ganttwrapper',
+    standalone: false
+})
 export class Ng1GanttwrapperDirective extends UpgradeComponent {
   constructor(elementRef: ElementRef, injector: Injector) {
     super('ganttcomp', elementRef, injector);

@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
     template: `
       <div>
         <ng1Ganttwrapper></ng1Ganttwrapper>
-    </div>`
+    </div>`,
+    standalone: false
 })
 
 export class DashboardComponent {
